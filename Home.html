@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة النور</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Lalezar&family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav__links">
+            <li><a href="home.html">الصفحة الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+            <li><a href="Books.html">الكتب</a></li>
+        </ul>
+        <h1 class="nav_title">مكتبة النور</h1>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>مرحبًا بكم في مكتبة النور</h1>
+            <p>اكتشف مجموعة واسعة من الكتب الإلكترونية في مختلف المجالات.</p>
+            <button onclick="window.location.href='Books.html'">تصفح الكتب</button>
+        </div>
+    </div>
+
+    <!-- Featured Books Section -->
+    <div class="featured-books">
+        <h2>كتب مميزة</h2>
+        <div class="books-grid">
+            <div class="book-card">
+                <img src="images/book11.jpg" alt="كتاب 1">
+                <h3>الأيام</h3>
+                <p>سيرة ذاتية للأديب طه حسين.</p>
+            </div>
+            <div class="book-card">
+                <img src="images/book2.1.jpg" alt="كتاب 2">
+                <h3>عمارة يعقوبيان</h3>
+                <p>رواية تصور الحياة الاجتماعية في مصر.</p>
+            </div>
+            <div class="book-card">
+                <img src="images/book3.1.jpg" alt="كتاب 3">
+                <h3>الخبز الحافي</h3>
+                <p>رواية تعكس حياة الفقراء في المغرب.</p>
+            </div>
+            <div class="book-card">
+                <img src="images/book4.1.jpg" alt="كتاب 4">
+                <h3>النبي</h3>
+                <p>كتاب فلسفي يعبر عن الحكمة والإنسانية.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Functions.js"></script>
+    <script>home();</script>
+</body>
+</html>
