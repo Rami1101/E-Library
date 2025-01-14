@@ -32,6 +32,9 @@ nav.addEventListener('mouseout', function (e) {
 //!-----------------------------------------------------------------------------------------
 //! books js
 
+//!-----------------------------------------------------------------------------------------
+//! books js
+
 function books() {
     //? hide and show books
     const table = document.querySelector('.table');
@@ -169,22 +172,19 @@ function books() {
     //? scroll
     const checkbtn1 = document.getElementById('checkbtn-1');
     checkbtn1.addEventListener('click', function () {
-        const section_form = document.querySelector('.section_form')
-        checkbtn1.addEventListener('click', function (e) {
+        const section_form = document.querySelector('.section_form');
 
-            if (!selectedBooks.length == 0) {
-
-                const s1coords = section_form.getBoundingClientRect();
-                section_form.classList.remove('hidden');
-                section_form.scrollIntoView({ behavior: "smooth" })
-            }
-            else {
-                alert('اختر كتاب');
-            }
-
-        })
+        if (!selectedBooks.length == 0) {
+            const s1coords = section_form.getBoundingClientRect();
+            section_form.classList.remove('hidden');
+            section_form.scrollIntoView({ behavior: "smooth" });
+        } else {
+            alert('اختر كتاب');
+        }
     });
 }
+
+
 
 function aboutus() {
     // Particle.js Configuration
@@ -293,4 +293,12 @@ function aboutus() {
         },
         retina_detect: true
     });
+}
+
+//!-----------------------------------------------------------------------------------------
+//! home js
+
+function home() {
+    // Call the same particle.js configuration as aboutus()
+    aboutus();
 }
